@@ -1,167 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Biblioteca Netflix</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Biblioteca Netflix</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
-</head>
-<body>
-  <div class="wrapper">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- HEADER -->
+            <header>
+                <div class="netflixLogo">
+                    <a id="logo" href="#home"><img src="https://aluno.uninove.br/img/logo_branco_uninove.png" alt="Logo Image" /></a>
+                </div>
+                <nav class="main-nav">
+                    <a href="index.html">Home</a>
+                    <a href="#home">Galeria de Casos</a>
+                    <a href="#myList">Vídeos</a>
+                </nav>
+                <nav class="sub-nav">
+                    <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+                    <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+                    <a href="#">Minha Biblioteca</a>
+                </nav>
+            </header>
+            <!-- END OF HEADER -->
 
-    <!-- HEADER -->
-    <header>
-      <div class="netflixLogo">
-        <a id="logo" href="#home"><img src="https://aluno.uninove.br/img/logo_branco_uninove.png" alt="Logo Image"></a>
-      </div>      
-      <nav class="main-nav">                
-        <a href="index.html">Home</a>
-        <a href="#home">Galeria de Casos</a>
-        <a href="#myList">Vídeos</a>    
-      </nav>
-      <nav class="sub-nav">
-        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
-        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a href="#">Minha Biblioteca</a>        
-      </nav>      
-    </header>
-    <!-- END OF HEADER -->
-    
-    <!-- MAIN CONTAINER -->
-    <section class="main-container" >
-      <div class="location" id="home" >
-          <!--<h1 id="home" >Mais  vistos:</h1>-->
-          <br>
-          <br>
-        <div class="header-banner">
+            <!-- MAIN CONTAINER -->
+            <section class="main-container">
+                <div class="location" id="home">
+                    <!--<h1 id="home" >Mais  vistos:</h1>-->
+                    <br />
+                    <br />
+                    <div id="url_imagem" class="header-banner"></div>
+                    <br />
+                    <div class="container">
+                        <h1 id="titulo_caso">Título do caso</h1>
+                        <br />
+                        <h2>Contextualização:</h2>
+                        <!--<iframe src='https://prezi.com/view/xoUdV7Is4RNx9BCISoXL/embed' id='iframe_container' frameborder='0' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='' allow='autoplay; fullscreen' height='315' width='560'></iframe>-->
 
+                        <br />
+                        <h2>Vídeo:</h2>
+
+                        <iframe
+                            id="url_video"
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/obGrB_ukyqE?controls=0"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                        <br />
+                        <br />
+
+                        <h2>Artigo/Parecer:</h2>
+                        <p id="artigo_parecer_texto">
+                          Suspendisse condimentum condimentum tortor dignissim pharetra. Nulla facilisi. Pellentesque vehicula rhoncus elit, id rhoncus leo molestie sed. Morbi elementum at ante nec scelerisque. Nunc vulputate scelerisque velit, vel porta lacus rhoncus dignissim. Sed consectetur pretium augue bibendum lobortis. Nunc consectetur nisi at luctus luctus.
+                        </p>
+
+                        <a id="artigo_parecer_link"
+                            type="button"
+                            class="btn btn-info"
+                            href="https://www.revistadostribunais.com.br/maf/app/resultList/document?&src=rl&srguid=i0ad82d9a000001757060cfbdca796482&docguid=Ib11ed7d0c19311e587f3010000000000&hitguid=Ib11ed7d0c19311e587f3010000000000&spos=5&epos=5&td=919&context=58&crumb-action=append&crumb-label=Documento&isDocFG=false&isFromMultiSumm=&startChunk=1&endChunk=1"
+                        >
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path fill-rule="evenodd" d="M5.172 10.828a.5.5 0 0 0 .707 0l4.096-4.096V9.5a.5.5 0 1 0 1 0V5.525a.5.5 0 0 0-.5-.5H6.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z" />
+                            </svg>
+                            Acessar Artigo
+                        </a>
+                        <br />
+                        <br />
+                        <h2>Jusrisprudência:</h2>
+                        <p id="jurisprudencia_texto">
+                          Sed libero magna, interdum rhoncus pellentesque in, vulputate ut mi. Aliquam consequat justo at eros rutrum, non consequat mi dapibus. Phasellus luctus aliquam leo, a pretium orci vulputate ac. Nunc faucibus ante malesuada, fermentum tellus pretium, aliquam leo. Sed auctor viverra felis, vehicula tristique tellus vestibulum sed. Ut ultrices posuere mi quis gravida. Aenean orci tortor, vestibulum eget commodo et, lacinia at lectus. Duis ut risus bibendum, aliquet orci non, ullamcorper arcu. Quisque vel congue quam. Cras semper nisi facilisis suscipit commodo. Maecenas lobortis condimentum porttitor. Donec malesuada venenatis tortor nec egestas. Pellentesque sem nulla, volutpat at diam placerat, laoreet hendrerit ex. Suspendisse et consectetur ex. Ut non velit consequat, convallis nulla ac, eleifend nisl. Nunc iaculis faucibus feugiat. Nam lorem mi, venenatis in porttitor tristique, pretium nec erat. Integer et dapibus sem, quis tempus diam. Donec malesuada venenatis tortor nec egestas. Pellentesque sem nulla, volutpat at diam placerat, laoreet hendrerit ex. Suspendisse et consectetur ex. Ut non velit consequat, convallis nulla ac, eleifend nisl. Nunc iaculis faucibus feugiat. Nam lorem mi, venenatis in porttitor tristique, pretium nec erat. Integer et dapibus sem, quis tempus diam.
+                        </p>
+                        <a  id="jurisprudencia_link"
+                            type="button"
+                            class="btn btn-warning"
+                            href="https://www.revistadostribunais.com.br/maf/app/resultList/document?&src=rl&srguid=i0ad6adc6000001756d0d2cd4e85fe2e7&docguid=Id6281390430c11e99949010000000000&hitguid=Id6281390430c11e99949010000000000&spos=4&epos=4&td=444&context=1505&crumb-action=append&crumb-label=Documento&isDocFG=false&isFromMultiSumm=&startChunk=1&endChunk=1"
+                        >
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                <path fill-rule="evenodd" d="M5.172 10.828a.5.5 0 0 0 .707 0l4.096-4.096V9.5a.5.5 0 1 0 1 0V5.525a.5.5 0 0 0-.5-.5H6.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z" />
+                            </svg>
+                            Revista dos Tribunais
+                        </a>
+                    </div>
+
+                    <br />
+                    <br />
+
+                    <!-- referencias livros -->
+                    <div class="container">
+                        <h3>Livros:</h3>
+                        <br />
+                        <a href="https://www.evolution.com.br/product/9788535291254"><img src="https://www.evolution.com.br/contents/fullcontent/15187860/coverarts/medium_15187860.jpg" alt="" /></a>
+                        <a href="https://www.evolution.com.br/product/9788535286458"><img src="https://www.evolution.com.br/contents/fullcontent/15185616/coverarts/medium_15185616.jpg" alt="Microbiologia Médica 8ED              " /></a>
+                        <a href="https://www.evolution.com.br/product/9788535285567"><img src="https://www.evolution.com.br/contents/fullcontent/84978/coverarts/medium_84978.jpg" alt="" /></a>
+                        <a href="https://www.evolution.com.br/product/9788535265002"><img src="https://www.evolution.com.br/contents/fullcontent/75666/coverarts/medium_75666.jpg" alt="" /></a>
+                        <a href="https://www.evolution.com.br/product/9788535265002"><img src="https://aluno.uninove.br/img/icone_biblioteca.png" alt="" /></a>
+                    </div>
+                </div>
+
+                <!-- The core Firebase JS SDK is always required and must be listed first -->
+                <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+                <!-- TODO: Add SDKs for Firebase products that you want to use https://firebase.google.com/docs/web/setup#available-libraries -->
+                <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+                <script>
+                    // Your web app's Firebase configuration
+                    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                    var firebaseConfig = {
+                        apiKey: "AIzaSyCyyy7WMXS6uu3RFpvkI6QYlqoZvdCZhH0",
+                        authDomain: "direito-app.firebaseapp.com",
+                        databaseURL: "https://direito-app.firebaseio.com",
+                        projectId: "direito-app",
+                        storageBucket: "direito-app.appspot.com",
+                        messagingSenderId: "363750678216",
+                        appId: "1:363750678216:web:5008fce4586af40e0d4ffd",
+                        measurementId: "G-JSD4025GQ1",
+                    };
+
+                    // Initialize Firebase
+                    firebase.initializeApp(firebaseConfig);
+                    firebase.analytics();
+
+                    // Constructors
+                    var titulo_caso_element = document.getElementById('titulo_caso');
+                    var url_imagem_element = document.getElementById('url_imagem');
+                    var url_video_element = document.getElementById('url_video');
+                    var artigo_parecer_texto_element = document.getElementById('artigo_parecer_texto');
+                    var artigo_parecer_link_element = document.getElementById('artigo_parecer_link');
+                    var jurisprudencia_texto_element = document.getElementById('jurisprudencia_texto');
+                    var jurisprudencia_link_element = document.getElementById('jurisprudencia_link');
+
+                    var ref = firebase.database().ref("Mastersheet/");
+
+                    ref.on(
+                        "value",
+                        function (snapshot) {
+                          console.log(snapshot.val()[1].titulo_caso);
+                          titulo_caso_element.innerText = snapshot.val()[1].titulo_caso;
+
+                          console.log(snapshot.val()[1].categoria_caso);
+                          
+
+                          console.log(snapshot.val()[1].url_imagem);
+
+
+                          console.log(snapshot.val()[1].id_prezi);
+
+
+                          console.log(snapshot.val()[1].url_video); //src="https://www.youtube.com/embed/obGrB_ukyqE?controls=0"
+                          url_video_element.src = 'https://www.youtube.com/embed/' + snapshot.val()[1].url_video + '?controls=0';
+                          
+                          console.log(snapshot.val()[1].artigo_parecer_texto);
+                          artigo_parecer_texto_element.innerText = snapshot.val()[1].artigo_parecer_texto;
+
+                          console.log(snapshot.val()[1].artigo_parecer_link);
+                          artigo_parecer_link_element.href = snapshot.val()[1].artigo_parecer_link;
+
+                          console.log(snapshot.val()[1].jurisprudencia_texto);
+                          jurisprudencia_texto_element.innerText = snapshot.val()[1].jurisprudencia_texto;
+
+                          console.log(snapshot.val()[1].jurisprudencia_link);
+                          jurisprudencia_link_element.href = snapshot.val()[1].jurisprudencia_link;
+
+                          console.log(snapshot.val()[1].livros_ref_img_array);
+
+
+                          console.log(snapshot.val()[1].livros_ref_link_array)
+                        },
+                        function (error) {
+                            console.log("Error: " + error.code);
+                        }
+                    ); 
+                    
+                </script>
+
+                <style>
+                    .header-banner {
+                        background-color: #333;
+                        background-image: url("https://previews.123rf.com/images/fizkes/fizkes1811/fizkes181101039/112483201-angry-young-woman-has-disagreement-with-annoyed-old-mother-in-law-grown-daughter-arguing-fighting-qu.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        width: 100%;
+                        height: 400px;
+                    }
+                </style>
+
+                <!-- END OF LINKS -->
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            </section>
         </div>
-        <br>
-        <div class="container">
-            <h2>Contextualização:</h2>
-            <iframe src='https://prezi.com/view/xoUdV7Is4RNx9BCISoXL/embed' id='iframe_container' frameborder='0' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='' allow='autoplay; fullscreen' height='315' width='560'></iframe>
-
-        
-        <p>
-        </p>
-        <br>
-        <h2>Vídeo:</h2>
-        <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/obGrB_ukyqE?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
-            <br>
-        
-            <h2>Artigo/Parecer:</h2>
-            CASAMENTO. REGIME DA COMUNHÃO UNIVERSAL DE BENS. ANULAÇÃO. ERRO. DOLO. COAÇÃO. PACTO ANTENUPCIAL. VÍCIOS DO CONSENTIMENTO. QUEBRA DA BOA-FÉ E DA FUNÇÃO SOCIAL DO CONTRATO. DESRESPEITO À DIGNIDADE DA PESSOA HUMANA. PARECER.
-            
-        </p>
-        <a type="button" class="btn btn-info"
-        href="https://www.revistadostribunais.com.br/maf/app/resultList/document?&src=rl&srguid=i0ad82d9a000001757060cfbdca796482&docguid=Ib11ed7d0c19311e587f3010000000000&hitguid=Ib11ed7d0c19311e587f3010000000000&spos=5&epos=5&td=919&context=58&crumb-action=append&crumb-label=Documento&isDocFG=false&isFromMultiSumm=&startChunk=1&endChunk=1">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                <path fill-rule="evenodd" d="M5.172 10.828a.5.5 0 0 0 .707 0l4.096-4.096V9.5a.5.5 0 1 0 1 0V5.525a.5.5 0 0 0-.5-.5H6.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
-              </svg>
-            Acessar Artigo</a>
-        <br>
-        <br>
-        <h2>Jusrisprudência:</h2>
-        <p>
-            APELAÇÃO CÍVEL - AÇÃO DE PARTILHA DE BENS - DIVÓRCIO - CASAMENTO REALIZADO EM REGIME DE SEPARAÇÃO CONVENCIONAL - SÚMULA 377 DO STF - INAPLICABILIDADE - PARTILHA DOS AQUESTOS - DESCABIMENTO - RECURSO NÃO PROVIDO. 1. Pelo regime da separação de bens, cada cônjuge é responsável pela administração do seu patrimônio, conservando-se na posse e na propriedade dos bens que trouxer para o casamento, inexistindo, a princípio, a comunicabilidade dos aquestos. 2. Entretanto, com o escopo de evitar o enriquecimento sem causa, a súmula 377 do Supremo Tribunal Federal preconiza que, no regime de separação obrigatória de bens, comunicam-se os adquiridos na constância do casamento(aquestos), considerando que os nubentes não tiveram oportunidade de manifestar sua vontade. 3. Todavia, o enunciado não incide no caso do casamento realizado sob o regime de separação convencional, em observância ao princípio da autonomia da vontade, devendo prevalecer a escolha do casal em pacto antenupcial, salvo se verificada a existência de vício do negócio jurídico. 4. No caso concreto, não havendo alegação de vício de consentimento ou formal no pacto antenupcial, celebrado livremente entre as partes, que estabeleceu o regime da separação de bens, incabível a meação dos aquestos. 5. Sentença mantida. 6. Recurso não provido.
-        </p>
-        <a type="button" class="btn btn-warning"
-        href="https://www.revistadostribunais.com.br/maf/app/resultList/document?&src=rl&srguid=i0ad6adc6000001756d0d2cd4e85fe2e7&docguid=Id6281390430c11e99949010000000000&hitguid=Id6281390430c11e99949010000000000&spos=4&epos=4&td=444&context=1505&crumb-action=append&crumb-label=Documento&isDocFG=false&isFromMultiSumm=&startChunk=1&endChunk=1">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-right-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                <path fill-rule="evenodd" d="M5.172 10.828a.5.5 0 0 0 .707 0l4.096-4.096V9.5a.5.5 0 1 0 1 0V5.525a.5.5 0 0 0-.5-.5H6.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707z"/>
-              </svg>
-            Revista dos Tribunais</a>
-
-        </div>
-
-        <br>
-        <br>
-
-        
-        <!-- referencias livros -->
-        <div class="container ">
-            <h3>Livros:</h3>
-            <br>
-            <a href="https://www.evolution.com.br/product/9788535291254"><img src="https://www.evolution.com.br/contents/fullcontent/15187860/coverarts/medium_15187860.jpg" alt=""></a>
-            <a href="https://www.evolution.com.br/product/9788535286458"><img src="https://www.evolution.com.br/contents/fullcontent/15185616/coverarts/medium_15185616.jpg" alt="Microbiologia Médica 8ED              "></a>
-            <a href="https://www.evolution.com.br/product/9788535285567"><img src="https://www.evolution.com.br/contents/fullcontent/84978/coverarts/medium_84978.jpg" alt=""></a>
-            <a href="https://www.evolution.com.br/product/9788535265002"><img src="https://www.evolution.com.br/contents/fullcontent/75666/coverarts/medium_75666.jpg" alt=""></a>
-            <a href="https://www.evolution.com.br/product/9788535265002"><img src="https://aluno.uninove.br/img/icone_biblioteca.png" alt=""></a>
-            
-          </div>
-        
-
-
-
-      </div>
-
-
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-
-      <!-- TODO: Add SDKs for Firebase products that you want to use
-          https://firebase.google.com/docs/web/setup#available-libraries -->
-
-      <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-          apiKey: "AIzaSyCp0zGWQwVdIezn6bsqrDSHmX2owqynM5g",
-          authDomain: "app-invetor-test.firebaseapp.com",
-          databaseURL: "https://app-invetor-test.firebaseio.com",
-          projectId: "app-invetor-test",
-          storageBucket: "app-invetor-test.appspot.com",
-          messagingSenderId: "50174810068",
-          appId: "1:50174810068:web:20186275f82c5ad2b76841"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-
-
-        // Vue script
-
-
-      </script>
-
-
-
-
-
-      <style>
-          .header-banner {
-    background-color: #333;
-    background-image: url('https://previews.123rf.com/images/fizkes/fizkes1811/fizkes181101039/112483201-angry-young-woman-has-disagreement-with-annoyed-old-mother-in-law-grown-daughter-arguing-fighting-qu.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-}
-      </style>
-      
-    <!-- END OF LINKS -->
-
-  </div>
-</body>
-</html>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+    </body>
 </html>
