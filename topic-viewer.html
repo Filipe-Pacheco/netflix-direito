@@ -13,10 +13,6 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
         <link rel="stylesheet" href="style.css" />
-
-        <!-- Vue.js CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-
     </head>
     <body>
         <div class="wrapper">
@@ -27,8 +23,8 @@
                     <a id="logo" href="#home"><img src="https://aluno.uninove.br/img/logo_branco_uninove.png" alt="Logo Image" /></a>
                 </div>
                 <nav class="main-nav">
-                    <a href="index.html">Home (Categorias)</a>
-                    <a href="#home">Categorias</a>
+                    <a href="index.html">Home</a>
+                    <a href="#home">Tópicos</a>
                 </nav>
                 <nav class="sub-nav">
                     <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
@@ -40,33 +36,52 @@
             <!-- END OF HEADER -->
 
             <!-- MAIN CONTAINER -->
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div class="container" id="app">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div class="container-fluid">
 
                         <!-- Caso Template-->
-                        <div v-for="card in todos" class="card text-white bg-dark mb-3" style="max-width: 1200px;">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img
-                                        src="https://previews.123rf.com/images/fizkes/fizkes1811/fizkes181101039/112483201-angry-young-woman-has-disagreement-with-annoyed-old-mother-in-law-grown-daughter-arguing-fighting-qu.jpg"
-                                        class="card-img"
-                                    />
-                                </div>
-                                <div class="col-md-8 text-white bg-dark mb-3">
-                                    <div class="card-body">
-                                        <h5 class="card-title">{{card}}</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <br />
-                                        <br />
-                                        <a type="button" href="caso-1.html" class="btn btn-primary">Ver o caso</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3 style="padding-top: 30px">Separação de Bens</h3>
+                        <div class="box">
+                          <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=1" alt=""></a>
+                          <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=2" alt=""></a>
+                          <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=3" alt=""></a>
+                          <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=4" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=5" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=6" alt=""></a>      
                         </div>
                         <!-- Caso Template End-->
+
+                         <!-- Caso Template-->
+                         <h3 style="padding-top: 30px">Alienação parental</h3>
+                         <div class="box">
+                           <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=7" alt=""></a>
+                           <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=8" alt=""></a>
+                           <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=9" alt=""></a>
+                           <a href="cases-viewer.html"><img src="https://picsum.photos/300/250?random=10" alt=""></a>
+                           <a href=""><img src="https://picsum.photos/300/250?random=11" alt=""></a>
+                           <a href=""><img src="https://picsum.photos/300/250?random=12" alt=""></a>      
+                         </div>
+                         <!-- Caso Template End-->
+
+                          <!-- Caso Template-->
+                        <h3 style="padding-top: 30px">Divórcio</h3>
+                        <div class="box">
+                          <a href=""><img src="https://picsum.photos/300/250?random=13" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=14" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=15" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=16" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=17" alt=""></a>
+                          <a href=""><img src="https://picsum.photos/300/250?random=18" alt=""></a>      
+                        </div>
+                        <!-- Caso Template End-->
+
+                        <br />
+                    <br />
+                    <br />
+                    <br />
 
                     </div>
                 </div>
@@ -97,19 +112,6 @@
                     // Initialize Firebase
                     firebase.initializeApp(firebaseConfig);
                     firebase.analytics();
-
-                    // Vue
-                    const db = firebase.initializeApp(firebaseConfig).database();
-
-
-                    var app = new Vue({
-                          // setup the reactive todos property
-                        data: () => ({ todos: [] }),
-
-                        firebase: {
-                        todos: db.ref('todos'),
-                        },
-                    })
 
                     function FetchAllData() {
                         firebase
