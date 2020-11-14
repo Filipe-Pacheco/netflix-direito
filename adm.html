@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  
+  <div id="app">
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.3.10/dist/vuetify.min.js"></script>
+  
+  <style>
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(10, minmax(200px, 1fr));
+      grid-gap: 1rem;
+    }
+    .card {
+      margin-bottom: 10px;
+    }
+  </style>
+
+
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      props: {
+        source: String,
+      },
+      data: () => ({
+        dialog: false,
+        drawer: null,
+        // ITENS DO MENU LATERAL
+        items: [
+           // Galeria  
+          { icon: 'mdi-apps', text: 'Galeria' },
+
+           // Dropdown:
+          {
+            icon: 'mdi-chevron-up',
+            'icon-alt': 'mdi-chevron-down',
+            text: 'Neuro Anatomia',
+            model: false,
+            children: [
+              { text: 'Fossa Craniana Anterior' },
+              { text: 'Tronco cerebral' },
+            ],
+          },
+          { icon: 'mdi-cog', text: 'Configurações' },
+          { icon: 'mdi-help-circle', text: 'Ajuda' },
+          { icon: 'mdi-cellphone-link', text: 'Outros aplicativos' },
+        ],
+        
+         // Dropdown:
+        cards: [
+        { title: 'Fossa Craniana Anterior' },
+        ],
+      }),
+    })
+    </script><script src="script.js"></script>
+</body>
+</html>
