@@ -115,9 +115,9 @@
   
   .box a:hover {
     transition: transform .3s;
-    -ms-transform: scale(1.4);
-    -webkit-transform: scale(1.4);  
-    transform: scale(1.4);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);  
+    transform: scale(1.2);
   }
   
   .box img {
