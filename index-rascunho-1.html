@@ -110,8 +110,9 @@
     </div>
     <style>
       .swiper-container {
-        width: 100%;
+        width: 90%;
         height: 100%;
+        margin: 0 20px;
       }
       .swiper-slide {
         height: 200px;
@@ -127,7 +128,7 @@
 <!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 6,
+    slidesPerView: 'auto',
     spaceBetween: 30,
     freeMode: true,
     loop: true,
@@ -138,10 +139,6 @@
     },
   });
 
-  $('.swiper-slide').on('mouseout', function() {
-    swiper.autoplay.start();
-    console.log('mouse over')
-  });
 </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
