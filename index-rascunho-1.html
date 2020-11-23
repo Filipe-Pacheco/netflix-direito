@@ -14,6 +14,10 @@
     <!-- Fonts links -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -59,9 +63,86 @@
         <p>Direito Civil</p>
       </div>
 
-      
+    
       
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card-codepen card-img img-1">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-2">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-3">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-4">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-5">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-6">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-7">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-8">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-9">
+          <p>Slide 1</p>
+        </div>
+        <div class="swiper-slide card-codepen card-img img-10">
+          <p><a href="#">Slide 1</a></p>
+        </div>
+      </div>
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        height: 200px;
+      }
+      .swiper-button-next , .swiper-button-prev {
+        color: gray;
+      }
+    </style>
+<!-- Swiper JS -->
+
+<!-- Initialize Swiper -->
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 6,
+    spaceBetween: 30,
+    freeMode: true,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  $('.swiper-slide').on('mouseout', function() {
+    swiper.autoplay.start();
+    console.log('mouse over')
+  });
+</script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
