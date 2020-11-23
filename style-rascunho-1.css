@@ -4,7 +4,7 @@ body {
   
 * {
     font-family: "Poppins", sans-serif;
-    /*border: red 3px solid;*/
+    width: auto;
 }
 .card-codepen {
     height: 215px;
@@ -35,15 +35,6 @@ p {
     align-self: end;
     margin: 0 0 0 20px;
     letter-spacing: 0.5px;
-}
-
-img {
-    position: absolute;
-    top: 0;
-    height: 110%;
-    width: 100%;
-    z-index: -1;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .card-codepen:before {
@@ -78,7 +69,10 @@ img {
     width: 90%;
     height: 100%;
     margin: 0 0 0 10px;
-    border-color: 1px red solid;
+    padding: 10px 0 10px 0;
+  }
+  .swiper-wrapper{
+    padding: 5px 0 5px 0;
   }
   .swiper-slide {
     height: 200px !important;
@@ -127,8 +121,130 @@ img {
 .img-10 {
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://previews.123rf.com/images/gar1984/gar19841809/gar1984180900206/109613006-general-data-protection-regulation-gpdr-padlock-on-computer-motherboard-and-keyboard-internet-data-p.jpg')
 }
-  
-  
+
+.img-11 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2017/02/12/14/00/justice-2060093_1280.jpg')
+}
+
+.img-12 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2014/02/05/08/19/smoke-258786_1280.jpg')
+}
+
+.img-13 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/06/08/18/37/hammer-802298_1280.jpg')
+}
+
+.img-14 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/07/08/03/13/forklift-835340_1280.jpg')
+}
+
+.img-15 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2018/07/06/16/57/the-labour-code-3520805_1280.jpg')
+}
+
+.img-16 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2014/08/03/19/08/firearm-409252_1280.jpg')
+}
+
+.img-17 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2017/03/11/07/04/football-2134477_1280.jpg')
+}
+
+.img-18 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBQnbDP1UEb0j5CtIc04cyjTymTzdpeHbipA&usqp=CAU')
+}
+
+.img-19 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2016/06/13/04/40/gay-1453594_1280.jpg')
+}
+
+.img-20 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2018/01/19/07/57/shaking-hands-3091906_1280.jpg')
+}
+
+.img-21 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2017/03/02/17/11/police-2111880_1280.jpg')
+}
+
+.img-22 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2016/02/19/11/25/supreme-court-building-1209701_1280.jpg')
+}
+
+.img-22 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2018/03/03/20/02/laptop-3196481_1280.jpg')
+}
+
+.img-23 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ0uhii0Zk-6ryxlCXxANQyHgniw0SzHvi2g&usqp=CAU')
+}
+
+.img-24 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://s.abcnews.com/images/Politics/ap_isis_mt_151128_16x9_992.jpg')
+}
+
+.img-25 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2018/11/24/23/41/weapon-3836563_1280.jpg')
+}
+
+.img-26 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/06/01/19/57/bodyworn-794111_1280.jpg')
+}
+
+.img-27 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2020/01/27/10/24/pollution-4796858_1280.jpg')
+}
+
+.img-28 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://www.bonobology.com/wp-content/uploads/2018/02/Arguing-Couples.jpg')
+}
+
+.img-28 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTCEsvZtg4S17aG3k_bBXf3N2xcoqtMD2Lg&usqp=CAU')
+}
+
+.img-30 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmXAf8q9igLkW6dWw3Ai_tpmI18G3rvzCNFw&usqp=CAU')
+}
+
+.img-31 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/04/30/09/46/love-746678_1280.jpg')
+}
+
+.img-32 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_co1TGtL14X_2UZ0GCRMttBp2XythDDn6rA&usqp=CAU')
+}
+
+.img-33 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM8XfXn6Ff-nKecH6IS7AXJwfxMr1Dv_0jkQ&usqp=CAU')
+}
+
+.img-34 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv56N5TGX0lJBTzvefk4EIxQ9Ecc-cGmYLiQ&usqp=CAU')
+}
+
+.img-35 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4d79H9sAn-PefQfMtuLK4GhsUDz356erF9g&usqp=CAU')
+}
+
+.img-36 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4DvWC78R_nQmgsFMLpFd5NSUHbTygxhHiZA&usqp=CAU')
+}
+
+.img-37 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2015/11/12/07/35/mother-1039765_1280.jpg')
+}
+
+.img-38 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://cdn.pixabay.com/photo/2016/11/29/02/30/affection-1866868_1280.jpg')
+}
+
+.img-39 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwd5yPyqrCCS_MzjsB_Mn-59EZqcujM5pMNw&usqp=CAU')
+}
+
+.img-40 {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv56N5TGX0lJBTzvefk4EIxQ9Ecc-cGmYLiQ&usqp=CAU')
+}
 
 /* Extra Small */
 @media only screen and (max-width: 600px){
@@ -159,15 +275,15 @@ img {
       .swiper-slide {
         height: 150px !important;
       }
-
-      .swiper-button-next {
-        display: hidden;
+      .swiper-button-next, swiper-button-prev {
+        display: none !important;
       }
+      
 }
 
 /* Small */
 @media screen and (min-width: 576px){
-
+    
 }
   
 /* Medium*/
